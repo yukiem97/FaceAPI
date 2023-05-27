@@ -12,10 +12,10 @@ export default class Virus extends Phaser.Physics.Arcade.Group{
             .setGravity(300)
             .setCollideWorldBounds(true)
             .setDepth(2)
-            .setCircle(25)
+            .setCircle(45)
             .setBounce(1,1)
             .setVelocityX((Phaser.Math.Between(0,1)?100: -100))
-            .hitsToKill = -1;
+            .hitsToKill = 1;
     
     }
 }
