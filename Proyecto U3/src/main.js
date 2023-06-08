@@ -1,6 +1,6 @@
 import { Physics } from "phaser";
-import Firstscene from "./scenes/Firstscene";
-import intro from "./scenes/Intro";
+import Firstscene from "./scenes/Firstscene.js";
+import Intro from "./scenes/Intro.js";
 
 const config = {
 

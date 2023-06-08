@@ -1,4 +1,4 @@
-class intro extends Phaser.Scene{
+class Intro extends Phaser.Scene {
 
     constructor(){
         super('Intro');
@@ -13,7 +13,8 @@ class intro extends Phaser.Scene{
     }
 
     create(){
-        this.introText = this.add.text(0,0, "PRESIONA ESPACIO PARA INICIAR", {fontStyle:'strong', align:'rigth', font:'64px Arial', fill:'red'})
+        this.introText = this.add.text(0, 0, "PRESIONA ESPACIO PARA INICIAR",
+            { fontStyle: 'strong', align: 'rigth', font: '64px Arial', fill: 'red' })
         this.cursors = this.input.keyboard.createCursorKeys();
     }
 
@@ -22,7 +23,6 @@ class intro extends Phaser.Scene{
             this.scene.start('Firstscene');
         }
     }
-    
 }
 
-export default intro;
+export default Intro;
